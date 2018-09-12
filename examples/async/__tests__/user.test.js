@@ -2,14 +2,18 @@
 
 'use strict';
 
+// 不想发送 request 请求, 添加一个 mock 测试, 详情见 __mocks__ 文件
+// 告诉Jest使用我们的手动模拟
 jest.mock('../request');
 
 import * as user from '../user';
 
 // Testing promise can be done using `.resolves`.
 it('works with resolves', () => {
+  // 确保添加expect.assertions以验证是否调用了一定数量的断言。否则，履行承诺不会使测试失败
   expect.assertions(1);
-  return expect(user.getUserName(5)).resolves.toEqual('Paul');
+  // Promise 成功的情况
+  return expect(user.getUserName(5)).resolves.toEqual('Paul1');
 });
 
 // The assertion for a promise must be returned.

@@ -1,5 +1,6 @@
 // Copyright 2004-present Facebook. All Rights Reserved.
 
+// nodejs 请求测试
 const http = require('http');
 
 export default function request(url) {

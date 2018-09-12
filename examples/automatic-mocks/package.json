@@ -7,7 +7,7 @@
     "jest": "*"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "jest": {
     "automock": true

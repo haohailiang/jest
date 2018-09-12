@@ -4,10 +4,11 @@
   "name": "example-manual-mocks",
   "devDependencies": {
     "babel-preset-env": "*",
-    "jest": "*"
+    "jest": "*",
+    "jest-cli": "^23.6.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "lodash": "^4.17.5"
