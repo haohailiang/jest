@@ -13,6 +13,7 @@ describe('define mock per test', () => {
   });
 
   it('uses mocked module', () => {
+    // 使用 mock 接口
     jest.doMock('../fruit', () => ({
       apple: 'mocked apple',
       default: jest.fn(() => 'mocked fruit'),
@@ -29,6 +30,7 @@ describe('define mock per test', () => {
   });
 
   it('uses actual module', () => {
+	// 使用真实的 模块
     jest.dontMock('../fruit');
     const {apple, strawberry, default: defaultExport} = require('../fruit');
 

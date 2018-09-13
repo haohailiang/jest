@@ -2,6 +2,9 @@
 
 'use strict';
 
+// 如果我们需要mock node的核心模块（如fs或者path），
+// 那么还是需要显示的调用jest.mock(‘path’) ，
+// 因为核心的node模块默然是不被mock的
 jest.mock('fs');
 
 describe('listFilesInDirectorySync', () => {

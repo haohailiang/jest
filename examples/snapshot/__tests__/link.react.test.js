@@ -3,6 +3,8 @@
 
 'use strict';
 
+// 快照适合测试页面的 DOM 结构比对
+
 import React from 'react';
 import Link from '../Link.react';
 import renderer from 'react-test-renderer';

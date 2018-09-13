@@ -9,6 +9,7 @@ test('implementation created by automock', () => {
 
 test('implementation created by jest.genMockFromModule', () => {
   const utils = jest.genMockFromModule('../utils').default;
+  // 模拟他函数的实现
   utils.isAuthorized = jest.fn(secret => secret === 'not wizard');
 
   expect(utils.authorize.mock).toBeTruthy();

@@ -23,6 +23,8 @@ it('does a partial mock', () => {
   expect(defaultExportResult).toBe('mocked fruit');
   expect(defaultExport).toHaveBeenCalled();
 
+  // Apple 用的是模拟的
   expect(apple).toBe('mocked apple');
+  // 草莓用的是真实的
   expect(strawberry()).toBe('strawberry');
 });

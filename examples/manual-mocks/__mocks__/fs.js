@@ -2,6 +2,7 @@
 
 const path = require('path');
 
+// 声明我要模拟 fs 安装的模块
 const fs = jest.genMockFromModule('fs');
 
 // This is a custom function that our tests can use during setup to specify

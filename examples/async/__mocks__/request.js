@@ -7,6 +7,7 @@ const users = {
   5: {name: 'Paul'},
 };
 
+// 模拟 request ,调用的时候准备调用这个
 export default function request(url) {
   return new Promise((resolve, reject) => {
 

@@ -27,7 +27,6 @@ it('displays a user after a click', () => {
   // Tell the fetchCurrentUser mock function to automatically invoke
   // its callback with some data
   // 呼应第 8 行, mock 的具体实现
-  // 当需要mock的函数是从其他模块创建的就可以使用mockImplementation
   fetchCurrentUser.mockImplementation(cb => {
     cb({
       fullName: 'Johnny Cash',

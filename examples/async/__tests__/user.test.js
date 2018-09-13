@@ -1,4 +1,5 @@
 // Copyright 2004-present Facebook. All Rights Reserved.
+// 默认使用的是 jest 不用专门导入
 
 'use strict';
 

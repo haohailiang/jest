@@ -8,9 +8,11 @@ import Clock from '../Clock.react';
 import renderer from 'react-test-renderer';
 
 jest.useFakeTimers();
+
 Date.now = jest.fn(() => 1482363367071);
 
 it('renders correctly', () => {
   const tree = renderer.create(<Clock />).toJSON();
+  // 就是生成的视图和 快照途中的视图是否一致
   expect(tree).toMatchSnapshot();
 });
